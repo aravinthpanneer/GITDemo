@@ -28,6 +28,7 @@ Scenario: Verify if Book is Deleted Successfully using DeleteBook API
 	When Calls "deleteBookAPI" Using "Post" Http Request
 	Then The API call got success with status code 200
 	And "msg" in response body is "book is successfully deleted"
+	And "msg" in response body is "book is successfully deleted"
 
 	
 	
