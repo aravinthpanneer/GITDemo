@@ -1,0 +1,96 @@
+Request method:	POST
+Request URI:	http://216.10.245.166/Library/Addbook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Learn Selenium Automation with Java",
+    "isbn": "asdc",
+    "aisle": 1009,
+    "author": "Aravinth"
+}
+HTTP/1.1 200 OK
+Date: Sun, 27 Mar 2022 09:28:59 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "Msg": "successfully added",
+    "ID": "asdc1009"
+}
+Request method:	GET
+Request URI:	http://216.10.245.166/Library/GetBook.php?ID=asdc1009
+Proxy:			<none>
+Request params:	<none>
+Query params:	ID=asdc1009
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 27 Mar 2022 09:29:00 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+[
+    {
+        "book_name": "Learn Selenium Automation with Java",
+        "isbn": "asdc",
+        "aisle": "1009",
+        "author": "Aravinth"
+    }
+]
+Request method:	POST
+Request URI:	http://216.10.245.166/Library/DeleteBook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ID": "asdc1009"
+}
+HTTP/1.1 200 OK
+Date: Sun, 27 Mar 2022 09:29:00 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "book is successfully deleted"
+}
